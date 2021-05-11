@@ -1,0 +1,30 @@
+# virtual environment
+venv/
+
+# files with compiled bytecode
+*.py[co]
+__pycache__/
+
+# VS code internal files
+.vscode
+
+# sonar scanner analysis directory
+.scannerwork/
+
+# pytest generated files
+.pytest_cache/
+
+# pytest coverage reports
+.coverage
+
+# pytest results
+test/*.xml
+
+# database migrations
+**/migrations
+
+# default database for testing purposes
+*.sqlite3
+
+# documentation folder
+docs/
