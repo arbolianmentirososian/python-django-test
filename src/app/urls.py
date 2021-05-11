@@ -19,5 +19,10 @@ from .math_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('add/<int:num1>/<int:num2>', views.add),
+    path('hello', views.HelloView.as_view(), name='hello'),
+    path('add/<int:num1>/<int:num2>', views.AddView.as_view(), name='add'),
+    path('subtract/<int:num1>/<int:num2>', views.SubtractView.as_view(), name='subtract'),
+    path('multiply/<int:num1>/<int:num2>', views.MultiplyView.as_view(), name='multiply'),
+    path('divide/<int:num1>/<int:num2>', views.DivideView.as_view(), name='divide'), 
+    path('modulo/<int:num1>/<int:num2>', views.ModuloView.as_view(), name='modulo'),
 ]

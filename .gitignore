@@ -21,7 +21,7 @@ __pycache__/
 test/*.xml
 
 # database migrations
-**/migrations
+**/migrations/
 
 # default database for testing purposes
 *.sqlite3
